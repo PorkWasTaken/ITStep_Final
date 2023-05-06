@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Title{
+    color: #ffff;
+}
+
+#Header{
+    width: 100%;
+    height: 50rem;
+    background-image: url("HeaderPic.png");
+    border-bottom-left-radius: 5%;
+    padding: 0 5%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+#HeaderMid{
+    text-align: center;
+    margin-top: 170px;
+}
+
+#HeaderMid h1{
+    color: #ffff;
+    font-size: 3rem;
+}
