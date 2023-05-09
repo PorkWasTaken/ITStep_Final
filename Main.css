@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#Title{
+#Title a{
+    text-decoration: none;
     color: #ffff;
 }
 
@@ -13,7 +14,10 @@
     width: 100%;
     height: 50rem;
     background-image: url("HeaderPic.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     padding: 0 5%;
 }
 
@@ -23,6 +27,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+}
+
+nav ul{
+    margin-left: 80px;
 }
 
 nav ul li{
@@ -44,4 +52,83 @@ nav ul li a{
 #HeaderMid h1{
     color: #ffff;
     font-size: 3rem;
+}
+
+#HeaderMid h2{
+    font-size: 1.5rem;
+}
+
+#Globe{
+    color: #ffff;
+    background: #7B61FF;
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 12px;
+    border: none;
+}
+
+#GlobeP{
+    display: flex;
+    justify-content: center;
+}
+
+#Globe:hover{
+    cursor: pointer;
+}
+
+#Btns button{
+    background-color: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+#Btns button:hover{
+    cursor: pointer;
+}
+
+#HeaderBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    width: 1100px;
+    height: 70px;
+    margin-top: 200px;
+    border-radius: 12px;
+}
+
+#HeaderBottomP{
+    display: flex;
+    justify-content: center;
+}
+
+
+#HeaderBottom button{
+    background-color: #7B61FF;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-right: 10px;
+}
+
+#div1{
+    margin-left: 10px;
+    display: flex;
+}
+
+#div2,#div3,#div4{
+    display: flex;
+}
+
+#img4, #img3 , #img2, #img1{
+    margin-right: 10px;
+    margin-top: 5px;
 }
