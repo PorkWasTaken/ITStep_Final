@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
@@ -30,13 +31,26 @@
             <button>Sign Up</button>
             <button>Log In</button>
         </div>
+        <div id="Bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
+
+    <div class="dropdown_menu">
+        <li><a href="">Home</a></li>
+            <li><a href="">Hotels</a></li>
+            <li><a href="">Restaurants</a></li>
+            <li><a href="">Tours</a></li>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Activities</a></li>
+            <li><a href="">Contact</a></li>
+    </div>
 
     <div id="HeaderMid">
         <h1>Discover the most engaging places</h1>
         <div id="GlobeP">
         <button id="Globe">
-            <h2><img src="Globe.png" alt=""> Discover on 3D Globe</h2>
+            <h2><img src="Globe.png" alt="" id="Glob"> Discover on 3D Globe</h2>
         </button>
         </div>
     </div>
@@ -83,7 +97,9 @@
             </div>
         </div>
 
-        <button><img src="Search.png" alt=""></button>
+        <div id="MainSearch">
+            <button><img src="Search.png" alt=""></button>
+        </div>
     </div>
 </div>
 

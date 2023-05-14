@@ -146,6 +146,47 @@ nav ul li a{
     display: none;
 }
 
+#Bar{
+    color:white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown */
+
+.dropdown_menu li{
+    list-style: none;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 /* Header Responsive */
 
 @media screen and (max-width:1750px){
@@ -223,6 +264,65 @@ nav ul li a{
     }
     #HeaderMid{
         margin-top: 50px;
+        transition: all 0.5s;
+    }
+}
+
+ @media screen and (max-width:945px){
+    nav ul{
+        display: none;
+        transition: all 0.5s;
+    }
+    #Bar{
+        display: block;
+        transition: all 0.5s;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    #HeaderBottom{
+        margin-top: 30px;
+        width: 700px;
+        transition: all 0.5s;
+    }
+    #HeaderMid{
+        margin-top: 30px;
+        transition: all 0.5s;
+    }
+    #HeaderMid h1{
+        font-size: 1.5rem;
+        transition: all 0.5s;
+    }
+    #Globe{
+        width: 200px;
+        height: 40px;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:755px){
+    #div1,#div2,#div3,#div4{
+        display: none;
+        transition: all 0.5s;
+    }
+    #HeaderBottom{
+        margin-top: 20px;
+        width: 60px;
+        height: 50px;
+        transition: all 0.5s;
+    }
+    #HeaderBottom button{
+        background-color: #7B61FF;
+        border-radius: 12px;
+        width: 45px;
+        height: 40px;
+        border: none;
+        margin-right: none;
+        margin-left: 8px;
+        transition: all 0.5s;
+    }
+    #Globe{
+        margin-top: 20px;
         transition: all 0.5s;
     }
 }
