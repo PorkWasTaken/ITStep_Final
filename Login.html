@@ -6,15 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+  integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="Main">
-        <div>
-            <input type="password" placeholder="Password">
+    <div class="wrapper">
+        <div class="left">
+            <h3 id="Title">2rism <img src="Vector.png"></h3>
         </div>
-        <div>
-            <input type="email" placeholder="email">
+        <div class="right">
+            <div class="tabs">
+                <ul>
+                    <li class="register_li">Register</li>
+                    <li class="login_li">Login</li>
+                </ul>
+            </div>
+            <div class="register">
+                <div class="input_field">
+                    <input type="text" placeholder="Username" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="email" placeholder="E-mail" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" class="input">
+                </div>
+                <div class="btn"><a href="">Register</a></div>
+            </div>
+            <div class="login">
+                <div class="input_field">
+                    <input type="email" placeholder="E-mail" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" class="input">
+                </div>
+                <div class="btn"><a href="">Login</a></div>
+            </div>
         </div>
     </div>
+
+    <script src="Login.js"></script>
 </body>
 </html>
