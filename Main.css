@@ -83,12 +83,16 @@ nav ul li a{
 
 #Btns button{
     background-color: rgb(62, 62, 62);
-    color: rgb(255, 255, 255);
     width: 80px;
     height: 30px;
     border-radius: 20px;
     border: none;
     margin-right: 10px;
+}
+
+#Btns button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 #Btns button:hover{
@@ -323,6 +327,206 @@ nav ul li a{
     }
     #Globe{
         margin-top: 20px;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:730px){
+    .dropdown_menu li{
+        list-style: none;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dropdown_menu.open{
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #Globe img{
+        display: none;
+        transition: all 0.5s;
+    }
+    #Globe h2 a{
+        font-size: 0.7rem;
+        transition: all 0.5s;
+    }
+    #HeaderMid{
+        margin-top: 15px;
+        transition: all 0.5s;
+    }
+    #HeaderMid h1{
+        font-size: 1rem;
+        transition: all 0.5s;
+    }
+    #Globe{
+        margin-top: 15px;
+        width: 150px;
+        height: 30px;
+        transition: all 0.5s;
+    }
+    #HeaderBottom{
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s;
+    }
+    #HeaderBottom button{
+        background-color: #7B61FF;
+        border-radius: 12px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        margin-right: none;
+        margin-left: 5px;
+        transition: all 0.5s;
+    }
+    .dropdown_menu li{
+        list-style: none;
+        padding: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+    
+    .dropdown_menu.open{
+        height: 110px;
+        transition: all 0.5s;
+    }
+
+    .dropdown_menu li a{
+        font-size: 0.7rem;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:465px){
+    #Btns button{
+        background-color: rgb(62, 62, 62);
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+        border: none;
+        margin-right: 5px;
+        transition: all 0.5s;
+    }
+    #Btns button a{
+        font-size: 0.6rem;
+        transition: all 0.5s;
+    }
+    #Btns{
+        margin-left: -50px;
+        transition: all 0.5s;
+    }
+    #HeaderMid h1{
+        display: none;
+        transition: all 0.5s;
+    }
+    #Globe{
+        margin-top: -5px;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:415px){
+    .dropdown_menu li{
+        list-style: none;
+        padding: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+
+    .dropdown_menu{
+        width: 80px;
+        transition: all 0.5s;
+    }
+    
+    .dropdown_menu.open{
+        height: 90px;
+        transition: all 0.5s;
+    }
+
+    .dropdown_menu li a{
+        font-size: 0.5rem;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:375px){
+    #HeaderBottom button{
+        width: 20px;
+        height: 20px;
+        border: none;
+        transition: all 0.5s;
+    }
+    #HeaderBottom button img{
+        display: block;
+        width: 1rem;
+        text-align: center;
+        margin-left: 2px;
+        transition: all 0.5s;
+    }
+    #HeaderBottom{
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        transition: all 0.5s;
+    }
+    #Globe{
+        margin-top: -15px;
+        width: 100px;
+        height: 20px;
+        transition: all 0.5s;
+    }
+    #Globe h2 a{
+        font-size: 0.5rem;
+        transition: all 0.5s;
+    }
+    #Bar{
+        margin-right: 20px;
+        transition: all 0.5s;
+    }
+    .dropdown_menu li{
+        list-style: none;
+        padding: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+
+    .dropdown_menu{
+        width: 70px;
+        top: 40px;
+        transition: all 0.5s;
+    }
+    
+    .dropdown_menu.open{
+        height: 70px;
+        transition: all 0.5s;
+    }
+
+    .dropdown_menu li a{
+        font-size: 0.4rem;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width:320px){
+    #Title{
+        font-size: 1rem;
+        margin-top: -15px;
+        transition: all 0.5s;
+    }
+    #Title img{
+        width: 10px;
+        margin-bottom: -10px;
         transition: all 0.5s;
     }
 }
