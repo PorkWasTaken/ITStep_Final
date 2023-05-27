@@ -51,6 +51,8 @@ let password_error = document.getElementById("password-error")
 let email_error = document.getElementById("email-error")
 let privatenum_error = document.getElementById("privatenum-error")
 let firstname_error = document.getElementById("firstname-error")
+let regex = /\d/;
+let doesItHaveNumber = regex.test(user);
 
 function validation(email1){
 if(email.length < 9 , email == Number){
@@ -63,7 +65,7 @@ if(email.length < 9 , email == Number){
     return false
 }else if (firstname == Number) {
     return false
-}else if (user == Number) {
+}else if (user.doesItHaveNumber) {
     return false
 }
 return true
