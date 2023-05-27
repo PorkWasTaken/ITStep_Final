@@ -98,23 +98,4 @@ let objects=[
     }
 ]
 
-let obj = [
-    {
-
-    }
-]
-
-$(document).ready(
-    function(){
-        let data = ''
-        objects.forEach(element => {
-            data=data+
-            `<div class="head_pics" style="background-image:url(`+element.img+`); width:200px; height:200px;"></div>
-            <h1>`+element.title+`</h1>
-            <p>`+element.location+`</p>
-            `
-        }),
-        document.getElementById("head_pics").innerHTML=data
-        });
-
 
