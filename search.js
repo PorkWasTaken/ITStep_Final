@@ -125,15 +125,6 @@ for (let i of products.data) {
   document.getElementById("places").appendChild(card);
 }
 function filterProduct(value) {
-  let buttons = document.querySelectorAll(".button-value");
-  buttons.forEach((button) => {
-
-    if (value.toUpperCase() == button.innerText.toUpperCase()) {
-      button.classList.add("active");
-    } else {
-      button.classList.remove("active");
-    }
-  });
   let elements = document.querySelectorAll(".card");
   elements.forEach((element) => {
     if (value == "all") {
@@ -148,17 +139,13 @@ function filterProduct(value) {
   });
 }
 
-// Add event listener to the button with class "button"
 let buttons = document.querySelectorAll(".button");
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
-    // Show the popup div
     document.getElementById("popup").style.display = "block";
   });
 });
 
-// Close the popup div
-// Close the popup div and display appropriate alerts
 function closePopup() {
   const dateInput = document.getElementById("date-input");
   if (dateInput.value === "") {

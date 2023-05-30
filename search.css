@@ -64,26 +64,6 @@
     width: 95%;
     margin: 0 auto;
   }
-  #search-container {
-    margin: 1em 0;
-  }
-  #search-container input {
-    background-color: transparent;
-    width: 40%;
-    border-bottom: 2px solid black;
-    padding: 1em 0.3em;
-  }
-  #search-container input:focus {
-    border-bottom-color: black;
-  }
-  #search-container button {
-    padding: 1em 2em;
-    margin-left: 1em;
-    background-color: grey;
-    color: white;
-    border-radius: 5px;
-    margin-top: 0.5em;
-  }
   .btns{
     border: 2px solid grey;
     padding: 1em 2.2em;
