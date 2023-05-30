@@ -32,19 +32,7 @@
     <button onclick="logout()" style="background-color: rgb(222, 222, 222); border: none; width: 80px; height: 30px; color: white; border-radius: 12px;">Logout</button>
 
     <script>
-      const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
-      if (loggedInUser) {
-        const welcomeMessage = document.getElementById('welcome-message');
-        welcomeMessage.textContent = `Welcome, ${loggedInUser.userName}!`;
-      } else {
-        window.location.href = 'login.html';
-      }
-
-      function logout() {
-        localStorage.removeItem('loggedInUser');
-        window.location.href = 'login.html';
-      }
     </script>
         <div id="Bar">
             <i class="fa-solid fa-bars"></i>
@@ -113,7 +101,7 @@
         </div>
 
         <div id="MainSearch">
-            <button><a href="img/search.html"><img src="img/Search.png" alt=""></a></button>
+            <button><a href="search.html"><img src="img/Search.png" alt=""></a></button>
         </div>
     </div>
 </div>

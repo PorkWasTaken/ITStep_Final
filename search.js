@@ -4,97 +4,97 @@ let products = {
       category:"Destinations",
       place: "Big",
       destination: "California, USA",
-      image: "img1.png"
+      image: "img/img1.png"
     },
     {
       category:"Destinations",
       place: "Prescott",
       destination: "Arizona, USA",
-      image: "img2.png"
+      image: "img/img2.png"
     },
     {
       category:"Destinations",
       place: "Fort Mayers",
       destination: "Florida, USA",
-      image: "img3.png"
+      image: "img/img3.png"
     },
     {
       category:"Destinations",
       place: "Tucson",
       destination: "Arizona, USA",
-      image: "img4.png"
+      image: "img/img4.png"
     },
     {
       category:"Destinations",
       place: "St. Joseph",
       destination: "Michigan, USA",
-      image: "img5.png"
+      image: "img/img5.png"
     },
     {
       category:"Destinations",
       place: "Madrid",
       destination: "Spain",
-      image: "img6.png"
+      image: "img/img6.png"
     },
     {
       category:"Hotels",
       place: "Monastero Santa Rosa Hotel & Spa",
       destination: "Salerno, Italy",
-      image: "img7.png"
+      image: "img/img7.png"
     },
     {
       category:"Hotels",
       place: "Grand Hotel Tremezzo",
       destination: "Lake Como, Italy",
-      image: "img8.png"
+      image: "img/img8.png"
     },
     {
       category:"Hotels",
       place: "The Oberoi Udaivilas, Udaipur",
       destination: "Udaipur, India",
-      image: "img9.png"
+      image: "img/img9.png"
     },
     {
       category:"Hotels",
       place: "AKA Beverly Hills",
       destination: "Los Angeles, United States",
-      image: "img10.png"
+      image: "img/img10.png"
     },
     {
       category:"Tips",
       place: "East Village Ice Cream Crawl",
       destination: "East Village",
-      image: "img11.png"
+      image: "img/img11.png"
     },
     {
       category:"Tips",
       place: "Brooklyn Bridge cinematic photo walk",
       destination: "Brooklyn Bridge",
-      image: "img12.png"
+      image: "img/img12.png"
     },
     {
       category:"Activities",
       place: "Sailing",
       destination: "Sea",
-      image: "img13.png"
+      image: "img/img13.png"
     },
     {
       category:"Activities",
       place: "Climbing",
       destination: "Mountain",
-      image: "img14.png"
+      image: "img/img14.png"
     },
     {
       category:"Activities",
       place: "Skiing",
       destination: "Mountain",
-      image: "img15.png"
+      image: "img/img15.png"
     },
     {
       category:"Activities",
       place: "Hiking",
       destination: "Mountain",
-      image: "img16.png"
+      image: "img/img16.png"
     },
 
   ],

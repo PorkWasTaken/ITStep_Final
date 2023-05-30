@@ -644,12 +644,11 @@ nav ul li a{
         transition: all 0.5s;
     }
     .tours-card-contents-text{
-        width: 100px;
+        width: 200px;
         transition: all 0.5s;
     }
     .tours-card-content-icons{
         gap: 1rem;
-        flex-direction: column;
         margin-top: 4rem;
         transition: all 0.5s;
     }

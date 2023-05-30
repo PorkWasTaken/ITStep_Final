@@ -13,3 +13,17 @@ $(toggleBtn).click(
     } 
 )
 
+
+const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+if (loggedInUser) {
+  const welcomeMessage = document.getElementById('welcome-message');
+  welcomeMessage.textContent = `Welcome, ${loggedInUser.userName}!`;
+} else {
+  window.location.href = 'login.html';
+}
+
+function logout() {
+  localStorage.removeItem('loggedInUser');
+  window.location.href = 'login.html';
+}
