@@ -105,15 +105,7 @@ body{
     width: 220px;
 }
 
-#email-error,#password-error{
-    margin-top: 5px;
-    width: 200px;
-    font-size: 13px;
-    color: #C62828;
-    background: rgba(255, 0, 0, 0.1);
-    text-align: center;
-    padding: 5px 8px;
-    border-radius: 3px;
-    border: 1px solid #EF9A9A;
-    display: none;
+#Register{
+    color: white;
+    width: 220px;
 }

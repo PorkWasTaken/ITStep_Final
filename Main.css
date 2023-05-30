@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 #Title a{
@@ -78,24 +84,6 @@ nav ul li a{
 }
 
 #Globe:hover{
-    cursor: pointer;
-}
-
-#Btns button{
-    background-color: rgb(62, 62, 62);
-    width: 80px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    margin-right: 10px;
-}
-
-#Btns button a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-#Btns button:hover{
     cursor: pointer;
 }
 
@@ -195,14 +183,14 @@ nav ul li a{
 
     #body{
         width: 100%;
-        height: 3100px;
+        height: 3755px;
     }
 
     .head_pics{
         width: 200px;
-        height: 180px;
+        height: 230px;
         border-radius: 12px;
-        background: #C7C7C7;
+        background: white;
         margin-right: 20px;
     }
 
@@ -260,9 +248,9 @@ nav ul li a{
 
     .head_pics2{
         width: 320px;
-        height: 380px;
+        height: 440px;
         border-radius: 12px;
-        background: #C7C7C7;
+        background: white;
         margin-right: 20px;
     }
 
@@ -338,9 +326,9 @@ nav ul li a{
 
     .head_pics4{
         width: 320px;
-        height: 380px;
+        height: 420px;
         border-radius: 12px;
-        background: #C7C7C7;
+        background: white;
         margin-right: 20px;
     }
 
@@ -401,7 +389,7 @@ nav ul li a{
         display: flex;
         gap: 2rem;
         flex: 1;
-        margin-left: 250px;
+        margin-left: 100px;
       }
 
       .tours-card2 {
@@ -415,7 +403,7 @@ nav ul li a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
       
       .tours-card-content-icons {
@@ -440,7 +428,7 @@ nav ul li a{
       }
 
     .tours-card-contents-text{
-        width: 400px;
+        width: 300px;
     }
 
     #About {
@@ -490,26 +478,32 @@ nav ul li a{
       .footer-sections {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
-        /* align-items: center;  */
         justify-content: space-between;
+      }
+
+      .footer-section1{
+        margin-left: -50px !important;
+      }
+      .footer-section2{
+        margin-left: -50px !important;
       }
       .footer-sections ul {
         margin-top: 2rem;
       }
       .footer-section p {
         font-size: 1.3rem;
-        width: 354px;
+        width: 300px;
         line-height: 1.9;
         margin-block: 1rem 2rem;
         color: #5b5b5b;
       }
 
       .footer-section{
-          margin-left: 100px;
+          margin-left: 90px;
       }
 
       .footer-section3{
-          margin-right: 150px;
+          margin-left: -50px !important;
       }
 
       .footer-section a {
@@ -527,8 +521,8 @@ nav ul li a{
       }
 
       #email{
-          width: 200px;
-          height: 30px;
+          width: 100px;
+          height: 10px;
       }
       
       .footer-section:last-child {
@@ -558,7 +552,7 @@ nav ul li a{
         border: none;
         outline: none;
         margin-top: 0.5rem;
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: black;
         background-color: white;
       }
@@ -572,7 +566,7 @@ nav ul li a{
         line-height: 1.2;
         background-color: #fff;
         align-items: center;
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding: 1rem 2rem;
         padding-right: 3rem;
         border-radius: 12px;
@@ -585,13 +579,31 @@ nav ul li a{
         justify-content: center;
         align-items: center;
         margin-left: 2rem;
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 12px;
         cursor: pointer;
       }
       .footer-section:last-child button img {
         margin-right: 0;
       }
+
+      .toggleOn
+{
+  display: none;
+}
+
+.toggleClose
+{
+  display: none;
+}
+
+.off {
+    display: none;
+  }
+  
+  .on {
+    display: block;
+  }
 
 /* Header Responsive */
 
@@ -630,10 +642,164 @@ nav ul li a{
         margin: 10px 20px;
         transition: all 0.5s;
     }
+
+    .tours-card-contents-text p{
+        font-size: 0.8rem;
+        transition: all 0.5s;
+    }
+    .tours-card-contents-text h3{
+        font-size: 1rem;
+        transition: all 0.5s;
+    }
+    .tours-card-contents-text{
+        width: 100px;
+        transition: all 0.5s;
+    }
+    .tours-card-content-icons{
+        gap: 1rem;
+        flex-direction: column;
+        margin-top: 4rem;
+        transition: all 0.5s;
+    }
 }
 
 @media screen and (max-width:1320px){
-    
+    .head_pics img{
+        width: 150px;
+        height: 120px;
+        transition: all 0.5s;
+    }
+    #head_pics{
+        overflow-y: hidden;
+    }
+    .head_pics{
+        margin-right: -30px;
+        margin-top: 150px;
+        transition: all 0.5s;
+    }
+    #head_pics2{
+        height: 400px;
+        overflow-y: hidden;
+        transition: all 0.5s;
+    }
+    .head_pics2{
+        margin-top: 250px;
+        transition: all 0.5s;
+    }
+    .head_pics2 img{
+        width: 200px;
+        height: 250px;
+        transition: all 0.5s;
+    }
+    .head_pics2 h6 img{
+        display: none;
+    }
+    .ratings{
+        display: none;
+    }
+    .head_pics2{
+        margin-right: -70px;
+        transition: all 0.5s;
+    }
+    #head_pics4{
+        height: 400px;
+        overflow-y: hidden;
+        transition: all 0.5s;
+    }
+    .head_pics4{
+        margin-top: 250px;
+        transition: all 0.5s;
+    }
+    .head_pics4 img{
+        width: 200px;
+        height: 250px;
+        transition: all 0.5s;
+    }
+    .head_pics4{
+        margin-right: -90px;
+        transition: all 0.5s;
+    }
+    #About h2 {
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+      #About p {
+        width: 300px;
+        font-size: 1rem;
+        margin-top: 3rem;
+        transition: all 0.5s;
+      }
+      #About img{
+        width: 280px;
+        height: 270px;
+        transition: all 0.5s;
+      }
+      #body{
+        height: 3090px;
+        overflow-y: hidden;
+        transition: all 0.5s;
+      }
+      .footer-section1{
+        margin-top: 50px;
+        margin-left: -20px !important;
+        transition: all 0.5s;
+      }
+      .footer-section2{
+        margin-top: 50px;
+        margin-left: -20px !important;
+        transition: all 0.5s;
+      }
+      .footer-section3{
+        margin-top: 50px;
+        margin-left: -20px !important;
+        transition: all 0.5s;
+      }
+      .footer-section1 h3{
+        font-size: 1.5rem;
+        margin-bottom: -20px;
+        transition: all 0.5s;
+      }
+      .footer-section2 h3{
+        font-size: 1.5rem;
+        margin-bottom: -20px;
+        transition: all 0.5s;
+      }
+      .footer-section3 h3{
+        font-size: 1.5rem;
+        margin-bottom: -20px;
+        transition: all 0.5s;
+      }
+      .footer-section1 ul li a{
+        font-size: 1rem;
+        transition: all 0.5s;
+      }
+      .footer-section2 ul li a{
+        font-size: 1rem;
+        transition: all 0.5s;
+      }
+      .footer-section3 ul li a{
+        font-size: 1rem;
+        transition: all 0.5s;
+      }
+      .footer-section0 p{
+        font-size: 1rem;
+        width: 200px;
+        transition: all 0.5s;
+      }
+      .footer-section4 h3{
+        font-size: 1.1rem;
+        transition: all 0.5s;
+      }
+      .footer-section4{
+        margin-top: 50px;
+        transition: all 0.5s;
+      }
+      footer {
+        background: #f9f9f9;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: all 0.5s;
+      }
 }
 
 @media screen and (max-width:1270px){

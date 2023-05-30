@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+  <div class="maindiv">
+    <div id="search-container">
+      <input type="search"id="search-input"placeholder="Search Places"/>
+      <button id="search">Search</button>
+    </div>
+    <a id="Hbut" href="index.html">Home</i></a>
+    <div id="buttons">
+      <button class="btns" onclick="filterProduct('all')">All</button>
+      <button class="btns" onclick="filterProduct('Hotels')">Hotels</button>
+      <button class="btns" onclick="filterProduct('Destinations')">Destinations</button>
+      <button class="btns" onclick="filterProduct('Tips')">Tips</button>
+      <button class="btns" onclick="filterProduct('Activities')">Activities</button>
+    </div>
+
+    <!-- Add the popup div -->
+<div id="popup" class="hide">
+  <div id="popup-content">
+    <input type="date" id="date-input">
+    <button id="submit-button" onclick="closePopup()">Submit</button>
+  </div>
+</div>
+
+    
+    <div id="places"></div>
+
+    </div>
+  <script src="Search.js"></script>
+</body>
+</html>
